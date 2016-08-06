@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+contents = '''<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -675,4 +675,21 @@
 
 </body>
 
-</html>
+</html>'''
+
+def main():
+    browseLocal(contents)
+    
+def strToFile(text, filename):
+    """Write a file with the given name and the given text"""
+    output = open(filename, "w")
+    output.write(text)
+    output.close()
+    
+def browseLocal(webpageText, filename='index.html'):
+    import webbrowser, os.path
+    strToFile(webpageText, filename)
+    webbrowser.open("file:///" + os.path.abspath(filename))
+    
+    
+main()
