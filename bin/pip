@@ -1,0 +1,6 @@
+#!/Users/susanarestrepo/anaconda/envs/musical-dna/bin/python
+if __name__ == '__main__':
+    import sys
+    import pip
+
+    sys.exit(pip.main())
