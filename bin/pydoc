@@ -1,5 +1,0 @@
-#!/Users/susanarestrepo/anaconda/envs/musical-dna/bin/python
-
-import pydoc
-if __name__ == '__main__':
-    pydoc.cli()
